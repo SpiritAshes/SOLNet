@@ -1,7 +1,5 @@
 # SOLNet
-<div style="text-align: justify;">
 This repository contains the PyTorch implementation of the paper "Speed-oriented Lightweight Salient Object Detection in Optical Remote Sensing Images" published in TGRS. The code provided here is designed to reproduce the experimental results and figures presented in the paper.  
-</div>
 !!!
 ![framework_overview](./fig/framework_overview.png)
 !!!
