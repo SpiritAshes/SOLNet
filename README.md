@@ -27,7 +27,7 @@ The dataset used for training and testing the model in this repository is source
 | EORSSD   | [Link to EORSSD](https://github.com/rmcong/EORSSD-dataset) |
 | ors-4199 (Code: fy06)   | [Link to ors-4199](https://pan.baidu.com/share/init?surl=ZWVSzFpRjN4BK-c9hL6knQ) |
 
-# Customizing Training Configuration
+## Customizing Training Configuration
 
 You have the flexibility to tailor the training process to your specific needs by modifying the configuration parameters in the `SOLNet.yaml` file located within the `config` directory. This allows you to adjust settings such as learning rates, batch sizes, and other hyperparameters to optimize training for your dataset and hardware setup.
 
@@ -76,7 +76,7 @@ Once the model conversion process is complete, you could verify the functionalit
 python test.py
 ```
 
-# Results
+## Results
 
 Our prediction results on EORSSD and ORSSD datasets are available for download from [Google Cloud Drive](https://drive.google.com/file/d/1L5-YBXdrrurq2TN495ecy4JuK7Hxoq-p/view?usp=sharing).
 
