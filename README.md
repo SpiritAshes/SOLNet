@@ -25,9 +25,7 @@ You have the flexibility to tailor the training process to your specific needs b
 
 Make sure your data is organized correctly, as this will impact the training process.  
 
-、、、
-    python train.py
-、、、
+、、、python train.py、、、
 
 ## Analyzing Training Results with TensorBoard
 
