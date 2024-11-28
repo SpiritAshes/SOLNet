@@ -23,12 +23,9 @@ The dataset used for training and testing the model in this repository is source
 
 | Dataset Name | Source URL |
 |-------------|-----------|
-| ORSSD   | [Link to Dataset 1](https://pan.baidu.com/s/1k44UlTLCW17AS0VhPyP7JA) |
-| EORSSD   | [Link to Dataset 2](https://github.com/rmcong/EORSSD-dataset) |
-| ors-4199 (Code: fy06)   | [Link to Dataset 3](https://pan.baidu.com/share/init?surl=ZWVSzFpRjN4BK-c9hL6knQ) |
-
-Please note that the use of these datasets is subject to their respective licenses. It is your responsibility to comply with the terms of use and any restrictions specified by the dataset providers.
-
+| ORSSD   | [Link to ORSSD](https://pan.baidu.com/s/1k44UlTLCW17AS0VhPyP7JA) |
+| EORSSD   | [Link to EORSSD](https://github.com/rmcong/EORSSD-dataset) |
+| ors-4199 (Code: fy06)   | [Link to ors-4199](https://pan.baidu.com/share/init?surl=ZWVSzFpRjN4BK-c9hL6knQ) |
 
 # Customizing Training Configuration
 
@@ -94,3 +91,4 @@ After obtaining the predictions from your model, you can leverage [MATLAB evalua
 ```
 
 # Acknowledgment
+This project was made possible by referencing the valuable work of several， including [RepVGG](https://github.com/DingXiaoH/RepVGG) and [ODConv](https://github.com/OSVAI/ODConv/tree/main). We are grateful for their contributions to the open-source community and encourage users of our project to also consider citing these projects when utilizing our code. Please be aware that while this project is governed by the [MIT](LICENSE), the use of the referenced projects' code must comply with their respective licenses. Users are advised to review these licenses to ensure proper compliance and understand that they are solely responsible for any legal implications arising from the use of the code. We appreciate your respect for the intellectual property rights of all contributors and recommend seeking legal counsel if you have any questions regarding licensing.
