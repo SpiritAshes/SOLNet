@@ -4,8 +4,8 @@ This repository contains the PyTorch implementation of the paper "Speed-oriented
 
 # Requirements
 、、
-python=3.7
-Pytorch=
+  python=3.7
+  Pytorch=
 、、
 
 # Results
