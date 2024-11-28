@@ -6,8 +6,9 @@ from tqdm import tqdm
 from datetime import datetime
 from model.SOLNet import SOLNet
 from data import get_loader
-from utils import adjust_lr, load_config
+from utils import load_config
 from loss import loss_func
+from torch.optim.lr_scheduler import StepLR
 
 from torch.utils.tensorboard import SummaryWriter
 
@@ -23,6 +24,8 @@ model = SOLNet()
 model.cuda()
 params = model.parameters()
 optimizer = torch.optim.Adam(params, config['lr'])
+
+scheduler = StepLR(optimizer, step_size=config['step_size'], gamma=config['decay_rate'])
 
 col_names = ['Loss', 'Loss4', 'Precision', 'Recall', 'Fbeta', 'MAE', 'Smearsure']
 
@@ -48,8 +51,6 @@ for epoch in range(config['epoch']):
     train_precision_mean = 0.0
     train_recall_mean = 0.0
     train_Smearsure_mean = 0.0
-
-    adjust_lr(optimizer, config['lr'], epoch, config['decay_rate'], config['decay_epoch'])
 
     model.train()
     for i, pack in tqdm(enumerate(train_loader, start=0), desc='Train Step', total=total_step, leave=False, position=1):
@@ -106,3 +107,4 @@ for epoch in range(config['epoch']):
 
     torch.save(model.state_dict(), config['save_path'] + 'SOLNet.pth'+ '.%d' % (epoch+1), _use_new_zipfile_serialization=False)
 
+    scheduler.step()
