@@ -9,13 +9,26 @@ This repository contains the PyTorch implementation of the paper "Speed-oriented
     pytorch==1.11.0
     torchvision==0.12.0
     torchaudio==0.11.0
-    cudatoolkit=11.3
+    cudatoolkit==11.3
     tensorboard==1.15.0
     tqdm==4.66.1
     thop
     imageio
     numpy
     pyyaml
+
+## Dataset Source
+
+The dataset used for training and testing the model in this repository is sourced from the following location. 
+
+| Dataset Name | Source URL |
+|-------------|-----------|
+| ORSSD   | [Link to Dataset 1](https://pan.baidu.com/s/1k44UlTLCW17AS0VhPyP7JA) |
+| EORSSD   | [Link to Dataset 2](https://github.com/rmcong/EORSSD-dataset) |
+| ors-4199   | [Link to Dataset 3](https://pan.baidu.com/share/init?surl=ZWVSzFpRjN4BK-c9hL6knQ) |
+
+Please note that the use of these datasets is subject to their respective licenses. It is your responsibility to comply with the terms of use and any restrictions specified by the dataset providers.
+
 
 # Customizing Training Configuration
 
@@ -60,6 +73,8 @@ Before proceeding with the model conversion, it is essential to verify that the 
   
 ## Running the Testing Script
 
+Once the model conversion process is complete, you could verify the functionality and performance of the converted model. To do this, you should run the following test code:
+
 ```
 python test.py
 ```
@@ -69,12 +84,13 @@ python test.py
 Our prediction results on EORSSD and ORSSD datasets are available for download from [Google Cloud Drive](https://drive.google.com/file/d/1L5-YBXdrrurq2TN495ecy4JuK7Hxoq-p/view?usp=sharing).
 
 ## Evaluation Tool
+
 After obtaining the predictions from your model, you can leverage [MATLAB evaluation tools](https://github.com/MathLee/MatlabEvaluationTools) to assess the performance of your model's predictions. MATLAB offers a comprehensive set of functions and metrics that can help you quantify the accuracy, precision, recall, and other relevant performance indicators of your model.
-
-
 
 # Citation
 
 ```
 
 ```
+
+# Acknowledgment
