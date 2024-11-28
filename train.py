@@ -14,9 +14,8 @@ from torch.utils.tensorboard import SummaryWriter
 
 config = load_config('SOLNet.yaml')
 
-
-image_root = config['input_path'] + 'train/images/'
-gt_root = config['input_path'] + 'train/GT/'
+image_root = config['image_root']
+gt_root = config['gt_root']
 train_loader = get_loader(image_root, gt_root, batchsize=config['batchsize'], trainsize=config['trainsize'])
 total_step = len(train_loader)
 
