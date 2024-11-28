@@ -3,10 +3,10 @@ This repository contains the PyTorch implementation of the paper "Speed-oriented
 ![framework_overview](./fig/framework_overview.png)  
 
 # Requirements
-  、、
+  、、、
   python=3.7
   Pytorch=
-  、、
+  、、、
 
 # Results
 Our prediction results on EORSSD and ORSSD datasets are available for download from [Google Cloud Drive](https://drive.google.com/file/d/1L5-YBXdrrurq2TN495ecy4JuK7Hxoq-p/view?usp=sharing).
