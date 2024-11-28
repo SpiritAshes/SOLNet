@@ -5,7 +5,7 @@ batchsize: 32
 trainsize: 256
 decay_rate: 0.1
 decay_epoch: 80
-logdir: log/xxx/   #xxx ---> Name of experiment
+logdir: ./log/xxx/   #xxx ---> Name of experiment
 input_path: ./dataset/data_aug/
 save_path: ./results/xxx/weights/  #xxx ---> Name of experiment
 
