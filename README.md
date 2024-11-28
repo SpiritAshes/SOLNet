@@ -23,7 +23,7 @@ You have the flexibility to tailor the training process to your specific needs b
 
 ## Running the Training Script
 
-Make sure your data is organized correctly, as this will impact the training process.
+Make sure your data is organized correctly, as this will impact the training process.  
 、、、
     python train.py
 ## Analyzing Training Results with TensorBoard
@@ -31,7 +31,7 @@ Make sure your data is organized correctly, as this will impact the training pro
 After the training process is completed, you can analyze the model's performance by examining the curves in TensorBoard. This visual representation of the training metrics will help you determine the optimal weights for your model.
 
 1. **Launch TensorBoard**:
-   Run the following command to launch TensorBoard and visualize the training metrics:
+   Run the following command to launch TensorBoard and visualize the training metrics:  
 、、、
     tensorboard --logdir=[path_to_your_logs]
     
@@ -41,7 +41,7 @@ Replace [path_to_your_logs] with the actual path to the directory containing you
    Once TensorBoard is open, navigate to the sections displaying the training loss, accuracy, or other relevant metrics. Use these curves to identify the epoch or checkpoint that corresponds to the best performance of your model.
 
 4. **Run the Model Conversion Script**:
-Use the provided model conversion script to convert the identified optimal weights. Execute the following command:
+Use the provided model conversion script to convert the identified optimal weights. Execute the following command:  
 、、、
     cd ./model
     python Model_Convert.py
