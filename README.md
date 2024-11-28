@@ -37,7 +37,7 @@ After the training process is completed, you can analyze the model's performance
    Run the following command to launch TensorBoard and visualize the training metrics:
 
 ```
-    tensorboard --logdir=[path_to_your_logs]
+tensorboard --logdir=[path_to_your_logs]
 ```
  
 Replace [path_to_your_logs] with the actual path to the directory containing your TensorBoard logs.
@@ -49,8 +49,8 @@ Replace [path_to_your_logs] with the actual path to the directory containing you
 Use the provided model conversion script to convert the identified optimal weights. Execute the following command:  
 
 ```
-    cd ./model
-    python Model_Convert.py
+cd ./model
+python Model_Convert.py
 ```
 
 Before proceeding with the model conversion, it is essential to verify that the `SOLNet.yaml` file located in the `config` directory contains the correct paths for both checkpoint storage and model conversion. Incorrect paths may lead to failures in converting the model. Please ensure that the following sections in `SOLNet.yaml` are correctly configured:
@@ -58,8 +58,23 @@ Before proceeding with the model conversion, it is essential to verify that the 
 - `checkpoint_path`: The directory where model checkpoints are saved.
 - `model_convert`: The path where the converted model will be stored.
   
-## Running the Training Script
+## Running the Testing Script
+
+```
+python test.py
+```
 
 # Results
 
 Our prediction results on EORSSD and ORSSD datasets are available for download from [Google Cloud Drive](https://drive.google.com/file/d/1L5-YBXdrrurq2TN495ecy4JuK7Hxoq-p/view?usp=sharing).
+
+## Evaluation Tool
+After obtaining the predictions from your model, you can leverage [MATLAB evaluation tools](https://github.com/MathLee/MatlabEvaluationTools) to assess the performance of your model's predictions. MATLAB offers a comprehensive set of functions and metrics that can help you quantify the accuracy, precision, recall, and other relevant performance indicators of your model.
+
+
+
+# Citation
+
+```
+
+```
