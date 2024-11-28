@@ -33,9 +33,9 @@ After the training process is completed, you can analyze the model's performance
 
 1. **Launch TensorBoard**:
    Run the following command to launch TensorBoard and visualize the training metrics:
-、、
+    
     tensorboard --logdir=[path_to_your_logs]
-、、
+    
 Replace [path_to_your_logs] with the actual path to the directory containing your TensorBoard logs.
 
 3. **Identify Optimal Weights**:
