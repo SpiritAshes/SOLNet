@@ -24,6 +24,7 @@ You have the flexibility to tailor the training process to your specific needs b
 ## Running the Training Script
 
 Make sure your data is organized correctly, as this will impact the training process.
+
     python train.py
 
 ## Analyzing Training Results with TensorBoard
@@ -32,17 +33,22 @@ After the training process is completed, you can analyze the model's performance
 
 1. **Launch TensorBoard**:
    Run the following command to launch TensorBoard and visualize the training metrics:
+   
     tensorboard --logdir=[path_to_your_logs]
+   
 Replace [path_to_your_logs] with the actual path to the directory containing your TensorBoard logs.
 
-2. **Identify Optimal Weights**:
+3. **Identify Optimal Weights**:
    Once TensorBoard is open, navigate to the sections displaying the training loss, accuracy, or other relevant metrics. Use these curves to identify the epoch or checkpoint that corresponds to the best performance of your model.
 
-3. **Run the Model Conversion Script**:
+4. **Run the Model Conversion Script**:
 Use the provided model conversion script to convert the identified optimal weights. Execute the following command:
+
     cd ./model
     python Model_Convert.py
+   
 Before proceeding with the model conversion, it is essential to verify that the `SOLNet.yaml` file located in the `config` directory contains the correct paths for both checkpoint storage and model conversion. Incorrect paths may lead to failures in converting the model. Please ensure that the following sections in `SOLNet.yaml` are correctly configured:
+
 - `checkpoint_path`: The directory where model checkpoints are saved.
 - `model_convert`: The path where the converted model will be stored.
   
