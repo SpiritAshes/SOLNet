@@ -10,15 +10,6 @@ def load_config(config_path):
         config = yaml.safe_load(file)
     return config
 
-
-def adjust_lr(optimizer, init_lr, epoch, decay_rate=0.1, decay_epoch=10):
-
-    decay = decay_rate ** (epoch // decay_epoch)
-    for param_group in optimizer.param_groups:
-        param_group['lr'] = init_lr * decay
-        print('\ndecay_epoch: {}, Current_LR: {}'.format(decay_epoch, init_lr * decay))
-
-
 class FocalLoss(torch.nn.Module):
     def __init__(self, gamma=2, alpha=0.25, reduction='elementwise_mean', eps=1e-10):
         super().__init__()
