@@ -2,7 +2,7 @@ import torch
 import torch.nn.functional as F
 import numpy as np
 import os, argparse
-# import imageio
+import imageio
 import time
 import yaml
 from model.SOLNet import SOLNet
@@ -24,7 +24,7 @@ model.cuda()
 test_datasets = ['ORSSD', 'EORSSD']
 
 for dataset in test_datasets:
-    save_path = './output/' + dataset + '/'
+    save_path = './results/xxx/prediction/' + dataset + '/'
     if not os.path.exists(save_path):
         os.makedirs(save_path)
     image_root = dataset_path + dataset + '/test/images/'
@@ -45,7 +45,7 @@ for dataset in test_datasets:
         feature_4 = feature_4.sigmoid().data.cpu().numpy().squeeze()
         feature_4 = (feature_4 - feature_4.min()) / (feature_4.max() - feature_4.min() + 1e-8)
         feature_4 = (feature_4 *  255.0).astype(np.uint8)
-        # imageio.imsave(save_path+name, feature_4)
+        imageio.imsave(save_path+name, feature_4)
 
     print('Running time {:.5f}'.format(time_sum/test_loader.size))
     print('FPS {:.5f}'.format(test_loader.size / time_sum))
