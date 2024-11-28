@@ -1,13 +1,14 @@
+#Train
 epoch: 120
 lr: 0.0001
 batchsize: 32
 trainsize: 256
 decay_rate: 0.1
 decay_epoch: 80
-logdir: log/
-input_path: ./data_aug/
-save_path: results/
+logdir: log/xxx/   #xxx ---> Name of experiment
+input_path: ./dataset/data_aug/
+save_path: ./results/xxx/weights/  #xxx ---> Name of experiment
 
-dataset_path: ./dataset/
-model_path: ./results/SOLNet_convert.pth
-testsize: 256
+#model convert
+checkpoint: ./results/xxx/weights/SOLNet.pth.120
+model_path: ./results/xxx/weight_convert/SOLNet_convert.pth
