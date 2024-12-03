@@ -50,12 +50,12 @@ After the training process is completed, you can analyze the model's performance
 tensorboard --logdir=[path_to_your_logs]
 ```
  
-Replace [path_to_your_logs] with the actual path to the directory containing your TensorBoard logs.
+    Replace [path_to_your_logs] with the actual path to the directory containing your TensorBoard logs.
 
-3. **Identify Optimal Weights**:
+2. **Identify Optimal Weights**:
    Once TensorBoard is open, navigate to the sections displaying the training loss, accuracy, or other relevant metrics. Use these curves to identify the epoch or checkpoint that corresponds to the best performance of your model.
 
-4. **Run the Model Conversion Script**:
+3. **Run the Model Conversion Script**:
 Use the provided model conversion script to convert the identified optimal weights. Execute the following command:  
 
 ```
