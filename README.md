@@ -87,7 +87,12 @@ After obtaining the predictions from your model, you can leverage [MATLAB evalua
 # Citation
 
 ```
-
+@ARTICLE{10772137,
+  author={Li, Zhaoyang and Miao, Yinxiao and Li, Xiongwei and Li, Wenrui and Cao, Jie and Hao, Qun and Li, Dongxing and Sheng, Yunlong},
+  journal={IEEE Transactions on Geoscience and Remote Sensing}, 
+  title={Speed-oriented Lightweight Salient Object Detection in Optical Remote Sensing Images}, 
+  year={2024},
+  doi={10.1109/TGRS.2024.3509725}}
 ```
 
 # Acknowledgment
